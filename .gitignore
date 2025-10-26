@@ -1,0 +1,11 @@
+backend/bin/
+backend/obj/
+backend/*.db
+backend/*.db-shm
+backend/*.db-wal
+backend/appsettings.Development.json
+
+frontend/node_modules/
+frontend/dist/
+frontend/.env.local
+frontend/.env.production.local

@@ -1,0 +1,55 @@
+/* App-level layout and alignment fixes */
+
+/* root wrapper */
+#root {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 1.5rem;
+  text-align: left;
+  position: relative;
+  z-index: 2;
+}
+
+/* logo */
+.logo {
+  height: 3.2rem;
+  width: 3.2rem;
+  border-radius:8px;
+  display:inline-block;
+  transition: transform .25s ease, box-shadow .25s ease;
+  background: linear-gradient(135deg,#6aa8ff,#8dd3c7);
+  box-shadow: 0 10px 24px rgba(106,168,255,0.12);
+  vertical-align: middle;
+}
+.logo:hover{
+  transform: translateY(-4px) scale(1.02);
+  box-shadow: 0 22px 48px rgba(106,168,255,0.18);
+}
+
+/* consistent card padding */
+.card { padding: 1.25rem; border-radius: 12px; box-sizing: border-box }
+
+/* small helper / readme line */
+.read-the-docs{ color: #6b7280; font-size: .96rem; margin-top: .8rem; }
+
+/* Ensure inline buttons / actions align to the right when used in headers */
+.header-actions {
+  display:flex;
+  gap: .75rem;
+  align-items:center;
+}
+
+/* Utility: center content */
+.center {
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+
+/* Make sure lists don't introduce inconsistent margins */
+ul, ol { margin: 0; padding-left: 1.15rem; }
+
+/* Respect reduced-motion */
+@media (prefers-reduced-motion: no-preference) {
+  /* keep UI calm: no extra animations added */
+}
